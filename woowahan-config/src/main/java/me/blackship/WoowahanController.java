@@ -10,4 +10,11 @@ public class WoowahanController {
 	public String lol() {
 		return "lol 두두등장!";
 	}
+	
+	@GetMapping("/white")
+	public String white() {
+		return "jar 갱신 테스트22";
+		// 테스트 성공
+	}
+	
 }

@@ -5,8 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class HelloController {
+	
+	private final MyProperties myProperties;
 
 	@GetMapping("/")
 	public String home() {
@@ -16,6 +21,11 @@ public class HelloController {
 	@GetMapping("/hello")
 	@ResponseBody
 	public String hello() {
-		return "Spring Boot Develop tools";
+		String str = "";
+		str += myProperties.getMessage();
+		str += "\n";
+		str += "my age : " + myProperties.getAge();
+		return str;
 	}
+	
 }

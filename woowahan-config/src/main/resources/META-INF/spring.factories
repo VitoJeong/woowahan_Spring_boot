@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-	me.blackship.WoowahanController
+	me.blackship.WoowahanConfig
