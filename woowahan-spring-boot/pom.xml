@@ -67,6 +67,16 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!-- 
+			spring-boot-starter-actuator
+			어플리케이션을 모니터링하고 관리하는 기능을 제공
+			웹(JSON) / JMX로 제공
+		 -->
+	    <dependency>
+	       <groupId>org.springframework.boot</groupId>
+	       <artifactId>spring-boot-starter-actuator</artifactId>
+	   </dependency>
+		
 	</dependencies>
 
 	<build>
